@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tomas.musicquiz.ResultsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFF847"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Quiz Completed!"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:padding="16dp"
+            android:src="@mipmap/accept_two" />
+
+        <TextView
+            android:id="@+id/result_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Your result:\nscore\nanswer"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#424036"
+            android:onClick="shareButton"
+            android:padding="16dp"
+            android:text="Share your result!"
+            android:textColor="#FFF600" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#424036"
+            android:onClick="toBeginning"
+            android:padding="16dp"
+            android:text="Try again"
+            android:textColor="#FFF600" />
+
+    </LinearLayout>
+</ScrollView>

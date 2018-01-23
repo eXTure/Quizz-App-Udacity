@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tomas.musicquiz.WelcomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="30dp"
+            android:background="#FFF847"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Welcome\nto\nQuiz App"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="@string/welcome_info"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="#FFF847"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Good Luck!"
+            android:textAlignment="center"
+            android:textColor="#FF000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#424036"
+            android:fontFamily="@font/quicksand_medium"
+            android:onClick="toMainQuiz"
+            android:padding="16dp"
+            android:text="Start Quiz"
+            android:textColor="#FFF600" />
+
+    </LinearLayout>
+</ScrollView>

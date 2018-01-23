@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF847"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Question 1 of 5"
+            android:textAlignment="center"
+            android:textColor="#FF000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Who wrote the song 'Thanks'?"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#424036"
+            android:onClick="playSongThanks"
+            android:padding="16dp"
+            android:text="Play part of the song"
+            android:textColor="#FFF600" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/volbeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonQuestionOne"
+                android:padding="8dp"
+                android:text="Volbeat" />
+
+            <RadioButton
+                android:id="@+id/metallica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonQuestionOne"
+                android:padding="8dp"
+                android:text="Metallica" />
+
+            <RadioButton
+                android:id="@+id/ozzy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonQuestionOne"
+                android:padding="8dp"
+                android:text="Ozzy Osbourne" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF847"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Question 2 of 5"
+            android:textAlignment="center"
+            android:textColor="#FF000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="What band is in this picture?"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@mipmap/tenaciousdblur" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <RadioButton
+                    android:id="@+id/the_calling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonQuestionTwo"
+                    android:padding="8dp"
+                    android:text="The Calling" />
+
+                <RadioButton
+                    android:id="@+id/tenacious"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonQuestionTwo"
+                    android:padding="8dp"
+                    android:text="Tenacious D" />
+
+                <RadioButton
+                    android:id="@+id/eurythmics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonQuestionTwo"
+                    android:padding="8dp"
+                    android:text="Eurythmics" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF847"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Question 3 of 5"
+            android:textAlignment="center"
+            android:textColor="#FF000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="What instrument is in the picture?"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ukulele" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="32dp">
+
+                <RadioButton
+                    android:id="@+id/mandolin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonQuestionThree"
+                    android:padding="8dp"
+                    android:text="Mandolin" />
+
+                <RadioButton
+                    android:id="@+id/guitar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonQuestionThree"
+                    android:padding="8dp"
+                    android:text="Guitar" />
+
+                <RadioButton
+                    android:id="@+id/ukulele"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonQuestionThree"
+                    android:padding="8dp"
+                    android:text="Ukulele" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF847"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Question 4 of 5"
+            android:textAlignment="center"
+            android:textColor="#FF000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Can you guess what note this is?"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#424036"
+            android:onClick="playNote"
+            android:padding="16dp"
+            android:text="Play the note"
+            android:textColor="#FFF600" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/do_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonQuestionFour"
+                android:padding="8dp"
+                android:text="Do (C)" />
+
+            <RadioButton
+                android:id="@+id/sol_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonQuestionFour"
+                android:padding="8dp"
+                android:text="Sol (G)" />
+
+            <RadioButton
+                android:id="@+id/la_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonQuestionFour"
+                android:padding="8dp"
+                android:text="La (A)" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF847"
+            android:fontFamily="@font/quicksand_medium"
+            android:padding="16dp"
+            android:text="Question 5 of 5"
+            android:textAlignment="center"
+            android:textColor="#FF000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="What year did the song 'We Are The Champions' by Queen come out?"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/date_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonQuestionFive"
+                android:padding="8dp"
+                android:text="1977" />
+
+            <RadioButton
+                android:id="@+id/date_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonQuestionFive"
+                android:padding="8dp"
+                android:text="1975" />
+
+            <RadioButton
+                android:id="@+id/date_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonQuestionFive"
+                android:padding="8dp"
+                android:text="1980" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#424036"
+            android:onClick="toResultsActivity"
+            android:padding="16dp"
+            android:text="Complete Quiz"
+            android:textColor="#FFF600" />
+
+    </LinearLayout>
+</ScrollView>
