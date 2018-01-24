@@ -21,16 +21,26 @@ public class MainQuiz extends AppCompatActivity {
 
     public int score = 0;
 
+    /**
+     * Method to play the song "Thanks"
+     */
     public void playSongThanks(View view) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.thankscut);
         mediaPlayer.start();
     }
 
+    /**
+     * Method to play the note G
+     */
     public void playNote(View view) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.note);
         mediaPlayer.start();
     }
 
+    /**
+     * Intent to switch to results activity screen when the button is clicked
+     * Switch statement to choose the correct result based on the score
+     */
     public void toResultsActivity(View view) {
         Intent intent = new Intent(this, ResultsActivity.class);
         //String toastMessage = "The score is: " + score;
@@ -60,6 +70,9 @@ public class MainQuiz extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * Checks the choise of question one
+     */
     public void radioButtonQuestionOne(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -81,6 +94,9 @@ public class MainQuiz extends AppCompatActivity {
         }
     }
 
+    /**
+     * Checks the choise of question two
+     */
     public void radioButtonQuestionTwo(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -102,6 +118,9 @@ public class MainQuiz extends AppCompatActivity {
         }
     }
 
+    /**
+     * Checks the choise of question three
+     */
     public void radioButtonQuestionThree(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -123,6 +142,9 @@ public class MainQuiz extends AppCompatActivity {
         }
     }
 
+    /**
+     * Checks the choise of question four
+     */
     public void radioButtonQuestionFour(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -144,6 +166,9 @@ public class MainQuiz extends AppCompatActivity {
         }
     }
 
+    /**
+     * Checks the choise of question five
+     */
     public void radioButtonQuestionFive(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();

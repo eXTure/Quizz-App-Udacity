@@ -13,7 +13,10 @@ public class WelcomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_welcome);
     }
 
-    public void toMainQuiz(View view){
+    /**
+     * Intent to switch to main quiz activity when the button is clicked
+     */
+    public void toMainQuiz(View view) {
         Intent intent = new Intent(this, MainQuiz.class);
         startActivity(intent);
     }

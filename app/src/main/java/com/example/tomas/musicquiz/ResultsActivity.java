@@ -9,22 +9,33 @@ import android.widget.TextView;
 public class ResultsActivity extends AppCompatActivity {
 
     String resultMessage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+        /**
+         * Get the answer of the quiz from the previous activity
+         * and display it to the screen when the activity is loaded
+         */
         Intent intent = getIntent();
         resultMessage = intent.getStringExtra(MainQuiz.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.result_answer);
         textView.setText(resultMessage);
     }
 
-    public void toBeginning(View view){
+    /**
+     * Intent to switch to the welcome activity when the button is clicked
+     */
+    public void toBeginning(View view) {
         Intent intent = new Intent(this, WelcomeActivity.class);
         startActivity(intent);
     }
 
-    public void shareButton(View view){
+    /**
+     * Share the result to the app of your choise when the button is clicked
+     */
+    public void shareButton(View view) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         String shareText = "My result:\n" + resultMessage;
