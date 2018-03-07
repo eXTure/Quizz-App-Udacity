@@ -6,6 +6,7 @@ import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -25,6 +26,8 @@ public class MainQuiz extends AppCompatActivity {
      * Method to play the song "Thanks"
      */
     public void playSongThanks(View view) {
+        Button button = findViewById(R.id.song_button);
+        button.setClickable(false);
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.thankscut);
         mediaPlayer.start();
     }

@@ -19,7 +19,7 @@
         <activity
             android:name=".MainQuiz"
             android:parentActivityName=".WelcomeActivity" />
-        <activity android:name=".ResultsActivity"></activity>
+        <activity android:name=".ResultsActivity" />
     </application>
 
 </manifest>

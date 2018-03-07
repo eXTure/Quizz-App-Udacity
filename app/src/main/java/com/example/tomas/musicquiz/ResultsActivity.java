@@ -1,10 +1,12 @@
 package com.example.tomas.musicquiz;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ResultsActivity extends AppCompatActivity {
 
@@ -30,6 +32,15 @@ public class ResultsActivity extends AppCompatActivity {
     public void toBeginning(View view) {
         Intent intent = new Intent(this, WelcomeActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        String msg = "If you want to start from the beginning, press 'Try Again' button at the bottom";
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, msg, duration);
+        toast.show();
     }
 
     /**
