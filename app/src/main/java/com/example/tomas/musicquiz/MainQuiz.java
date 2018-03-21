@@ -1,5 +1,6 @@
 package com.example.tomas.musicquiz;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.provider.MediaStore;
@@ -7,12 +8,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainQuiz extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.tomas.musicquiz.MESSAGE";
+    public static final String EXTRA_MESSAGE = "";
+    public static final String EXTRA_MESSAGE_TWO = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,35 +46,14 @@ public class MainQuiz extends AppCompatActivity {
     }
 
     /**
-     * Intent to switch to results activity screen when the button is clicked
-     * Switch statement to choose the correct result based on the score
+     * Intent to switch to results activity screen when the button "Complete Quiz" is clicked
      */
     public void toResultsActivity(View view) {
+        questionSevenFieldCheck();
+        checkboxQuestion();
         Intent intent = new Intent(this, ResultsActivity.class);
-        //String toastMessage = "The score is: " + score;
-        String intentMessageText = "";
-        switch (score) {
-            case 0:
-                intentMessageText = "Correct answers:\n0 out of 5\nTry again!";
-                break;
-            case 1:
-                intentMessageText = "Correct answers:\n1 out of 5\nTry again!";
-                break;
-            case 2:
-                intentMessageText = "Correct answers:\n2 out of 5\nNot bad!\nTry again";
-                break;
-            case 3:
-                intentMessageText = "Correct answers:\n3 out of 5\nAlmost!";
-                break;
-            case 4:
-                intentMessageText = "Correct answers:\n4 out of 5\nGood job!\nCan you answer all of them correctly?";
-                break;
-            case 5:
-                intentMessageText = "Correct answers:\n5 out of 5\nExcellent!\nYou are a pro musician!";
-                break;
-        }
-        //Toast.makeText(MainQuiz.this, toastMessage, Toast.LENGTH_SHORT).show();
-        intent.putExtra(EXTRA_MESSAGE, intentMessageText);
+        String scoreString = score + "";
+        intent.putExtra(EXTRA_MESSAGE, scoreString);
         startActivity(intent);
     }
 
@@ -190,6 +174,34 @@ public class MainQuiz extends AppCompatActivity {
                 if (checked)
                     score += 0;
                 break;
+        }
+    }
+
+    public void checkboxQuestion() {
+        boolean choice1 = true;
+        boolean choice2 = false;
+        boolean choice3 = false;
+        CheckBox questionOneBox = findViewById(R.id.checkbox_choice_1);
+        CheckBox questionTwoBox = findViewById(R.id.checkbox_choice_2);
+        CheckBox questionThreeBox = findViewById(R.id.checkbox_choice_3);
+        choice1 = questionOneBox.isChecked();
+        choice2 = questionTwoBox.isChecked();
+        choice3 = questionThreeBox.isChecked();
+        if (choice1 == false && choice2 == true && choice3 == true) {
+            score += 1;
+        } else {
+            score += 0;
+        }
+    }
+
+    public void questionSevenFieldCheck() {
+        EditText editText = findViewById(R.id.question_seven_edit_field);
+        String fieldCheck = editText.getText().toString().toLowerCase();
+
+        if (fieldCheck.equals("paul") || fieldCheck.equals("gene") || fieldCheck.equals("tommy") || fieldCheck.equals("eric")) {
+            score += 1;
+        } else {
+            score += 0;
         }
     }
 }

@@ -1,4 +1,65 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Quiz App</string>
     <string name="welcome_info">This Quiz will be about music,\ninstruments, notes and other questions related to music.</string>
+    <string name="welcome_title">Welcome\nto\nQuiz App</string>
+    <string name="quiz_start_cheer">Good Luck!</string>
+    <string name="quiz_start_button">Start Quiz</string>
+    <!-- "q" stands for question-->
+    <string name="title_q_1">Question 1 of 7</string>
+    <string name="q_1">Who wrote the song \"Thanks\"?</string>
+    <string name="q_1_button">Play part of the song</string>
+    <string name="q_1_button_info">!You can only listen to the part of the song once!</string>
+    <string name="q_1_choice_1">Volbeat</string>
+    <string name="q_1_choice_2">Metallica</string>
+    <string name="q_1_choice_3">Ozzy Osbourne</string>
+    <string name="title_q_2">Question 2 of 7</string>
+    <string name="q_2">What band is in this picture?</string>
+    <string name="q_2_choice_1">The Calling</string>
+    <string name="q_2_choice_2">Tenacious D</string>
+    <string name="q_2_choice_3">Eurythmics</string>
+    <string name="title_q_3">Question 3 of 7</string>
+    <string name="q_3">What instrument is in the picture?</string>
+    <string name="q_3_choice_1">Mandolin</string>
+    <string name="q_3_choice_2">Guitar</string>
+    <string name="q_3_choice_3">Ukulele</string>
+    <string name="title_q_4">Question 4 of 7</string>
+    <string name="q_4">Can you guess what note this is?</string>
+    <string name="q_4_button">Play the note</string>
+    <string name="q_4_choice_1" tools:ignore="TypographyOther">Do (C)</string>
+    <string name="q_4_choice_2">Sol (G)</string>
+    <string name="q_4_choice_3">La (A)</string>
+    <string name="title_q_5">Question 5 of 7</string>
+    <string name="q_5">What year did the song \"We Are The Champions\" by Queen come out?</string>
+    <string name="q_5_choice_1">1977</string>
+    <string name="q_5_choice_2">1975</string>
+    <string name="q_5_choice_3">1980</string>
+    <string name="title_q_6">Question 6 of 7</string>
+    <string name="q_6">Which of the following is NOT a song of \"The Beatles\"? Select two songs.</string>
+    <string name="q_6_choice_1">\"Don\'t let me down\"</string>
+    <string name="q_6_choice_2">\"Under Pressure\"</string>
+    <string name="q_6_choice_3">\"Love of my life\"</string>
+    <string name="title_q_7">Question 7 of 7</string>
+    <string name="q_7">Enter the name of any of the KISS member:</string>
+    <string name="q_7_edit_field_hint" tools:ignore="TypographyEllipsis">Enter the name...</string>
+    <string name="complete_quiz_button">Complete Quiz</string>
+    <string name="result_title">Quiz Completed!</string>
+    <string name="error_text">Oops, something went wrong. Try again.</string>
+    <string name="share_button">Share your result!</string>
+    <string name="try_again_button">Try again</string>
+    <string name="q_2_image_description">Band picture with blurred out name</string>
+    <string name="q_3_image_description">4-string instrument in a shape of guitar</string>
+    <string name="result_image_description">Check mark</string>
+    <string name="onBackPressed_message">If you want to start from the beginning, press \"Try Again\" button at the bottom</string>
+    <string name="shareButton_text_1">I scored</string>
+    <string name="shareButton_text_2">point(s) in the Music Quiz App!</string>
+    <string name="shareButton_text_3">Choose where to share!</string>
+    <string name="result_text_00">Correct answers:\n</string>
+    <string name="result_text_0">out of 7\nTry again!</string>
+    <string name="result_text_1">out of 7\nTry again!</string>
+    <string name="result_text_2">out of 7\nNot bad!\nTry again</string>
+    <string name="result_text_3">out of 7\nAlmost!</string>
+    <string name="result_text_4">out of 7\nGood job!\nCan you answer all of them correctly?</string>
+    <string name="result_text_5">out of 7\nExcellent!\nCan you answer all of them correctly?</string>
+    <string name="result_text_6">out of 7\nFantastic!\nCan you answer all of them correctly?</string>
+    <string name="result_text_7">out of 7\nPerfect!\nYou are a pro musician!</string>
 </resources>

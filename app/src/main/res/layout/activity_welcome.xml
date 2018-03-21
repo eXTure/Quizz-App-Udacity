@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -17,7 +17,7 @@
             android:layout_marginTop="30dp"
             android:background="#FFF847"
             android:fontFamily="@font/quicksand_medium"
-            android:text="Welcome\nto\nQuiz App"
+            android:text="@string/welcome_title"
             android:textAlignment="center"
             android:textColor="#123456"
             android:textSize="40sp" />
@@ -39,7 +39,7 @@
             android:background="#FFF847"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
-            android:text="Good Luck!"
+            android:text="@string/quiz_start_cheer"
             android:textAlignment="center"
             android:textColor="#FF000000"
             android:textSize="30sp" />
@@ -53,7 +53,7 @@
             android:fontFamily="@font/quicksand_medium"
             android:onClick="toMainQuiz"
             android:padding="16dp"
-            android:text="Start Quiz"
+            android:text="@string/quiz_start_button"
             android:textColor="#FFF600" />
 
     </LinearLayout>

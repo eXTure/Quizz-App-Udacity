@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -18,7 +18,7 @@
             android:background="#FFF847"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
-            android:text="Quiz Completed!"
+            android:text="@string/result_title"
             android:textAlignment="center"
             android:textColor="#123456"
             android:textSize="40sp" />
@@ -28,7 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:padding="16dp"
-            android:src="@mipmap/accept_two" />
+            android:src="@mipmap/accept_two"
+            android:contentDescription="@string/result_image_description" />
 
         <TextView
             android:id="@+id/result_answer"
@@ -37,7 +38,7 @@
             android:layout_marginBottom="30dp"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
-            android:text="Your result:\nscore\nanswer"
+            android:text="@string/error_text"
             android:textAlignment="center"
             android:textSize="30sp" />
 
@@ -50,7 +51,7 @@
             android:background="#424036"
             android:onClick="shareButton"
             android:padding="16dp"
-            android:text="Share your result!"
+            android:text="@string/share_button"
             android:textColor="#FFF600" />
 
         <Button
@@ -62,7 +63,7 @@
             android:background="#424036"
             android:onClick="toBeginning"
             android:padding="16dp"
-            android:text="Try again"
+            android:text="@string/try_again_button"
             android:textColor="#FFF600" />
 
     </LinearLayout>
