@@ -3,7 +3,9 @@
     <color name="colorPrimary">#02a9ea</color>
     <color name="colorPrimaryDark">#006494</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="background_material_light">#74fff600</color>
+    <color name="background_material_light">#FFF847</color>
     <color name="text_color_secondary">#b8000000</color>
-    <color name="secondary_text_material_dark">#00ffffff</color>
+    <color name="golden">#FFF847</color>
+    <color name="brown">#424036</color>
+    <color name="text_black">#FF000000</color>
 </resources>

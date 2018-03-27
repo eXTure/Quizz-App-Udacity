@@ -24,7 +24,7 @@ public class ResultsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         resultMessage = intent.getStringExtra(MainQuiz.EXTRA_MESSAGE);
         resultScore = Integer.parseInt(intent.getStringExtra(MainQuiz.EXTRA_MESSAGE));
-        TextView textView = findViewById(R.id.result_answer);
+        TextView textView = findViewById(R.id.result_answer_tv);
         String result00Msg = getResources().getString(R.string.result_text_00);
         String intentMessageText = result00Msg + resultScore;
 

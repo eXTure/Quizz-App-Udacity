@@ -17,7 +17,6 @@ import android.widget.Toast;
 
 public class MainQuiz extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "";
-    public static final String EXTRA_MESSAGE_TWO = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,20 @@ public class MainQuiz extends AppCompatActivity {
         setContentView(R.layout.activity_main_quiz);
     }
 
-    public int score = 0;
+    int score1;
+    int score2;
+    int score3;
+    int score4;
+    int score5;
+    int score6;
+    int score7;
+
+    public void toastMaker(String msg){
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, msg, duration);
+        toast.show();
+    }
 
     /**
      * Method to play the song "Thanks"
@@ -49,131 +61,90 @@ public class MainQuiz extends AppCompatActivity {
      * Intent to switch to results activity screen when the button "Complete Quiz" is clicked
      */
     public void toResultsActivity(View view) {
-        questionSevenFieldCheck();
+
+        radioButtonQuestionOne();
+        radioButtonQuestionTwo();
+        radioButtonQuestionThree();
+        radioButtonQuestionFour();
+        radioButtonQuestionFive();
         checkboxQuestion();
+        questionSevenFieldCheck();
+
         Intent intent = new Intent(this, ResultsActivity.class);
+        int score = score1 + score2 + score3 + score4 + score5 + score6 + score7;
         String scoreString = score + "";
         intent.putExtra(EXTRA_MESSAGE, scoreString);
+        toastMaker("Your score: " + score);
         startActivity(intent);
     }
 
     /**
      * Checks the choise of question one
      */
-    public void radioButtonQuestionOne(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.volbeat:
-                if (checked)
-                    score += 1;
-                break;
-            case R.id.metallica:
-                if (checked)
-                    score += 0;
-                break;
-            case R.id.ozzy:
-                if (checked)
-                    score += 0;
-                break;
+    public void radioButtonQuestionOne() {
+        boolean correctChoice = false;
+        RadioButton choiceView = findViewById(R.id.volbeat_rb);
+        correctChoice = choiceView.isChecked();
+        if (correctChoice == true){
+            score1 = 1;
+        }else {
+            score1 = 0;
         }
     }
 
     /**
      * Checks the choise of question two
      */
-    public void radioButtonQuestionTwo(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.the_calling:
-                if (checked)
-                    score += 0;
-                break;
-            case R.id.tenacious:
-                if (checked)
-                    score += 1;
-                break;
-            case R.id.eurythmics:
-                if (checked)
-                    score += 0;
-                break;
+    public void radioButtonQuestionTwo() {
+        boolean correctChoice = false;
+        RadioButton choiceView = findViewById(R.id.tenacious_rb);
+        correctChoice = choiceView.isChecked();
+        if (correctChoice == true){
+            score2 = 1;
+        }else {
+            score2 = 0;
         }
     }
 
     /**
      * Checks the choise of question three
      */
-    public void radioButtonQuestionThree(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.mandolin:
-                if (checked)
-                    score += 0;
-                break;
-            case R.id.guitar:
-                if (checked)
-                    score += 0;
-                break;
-            case R.id.ukulele:
-                if (checked)
-                    score += 1;
-                break;
+    public void radioButtonQuestionThree() {
+        boolean correctChoice = false;
+        RadioButton choiceView = findViewById(R.id.ukulele_rb);
+        correctChoice = choiceView.isChecked();
+        if (correctChoice == true){
+            score3 = 1;
+        }else {
+            score3 = 0;
         }
     }
 
     /**
      * Checks the choise of question four
      */
-    public void radioButtonQuestionFour(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.do_note:
-                if (checked)
-                    score += 0;
-                break;
-            case R.id.sol_note:
-                if (checked)
-                    score += 1;
-                break;
-            case R.id.la_note:
-                if (checked)
-                    score += 0;
-                break;
+    public void radioButtonQuestionFour() {
+        boolean correctChoice = false;
+        RadioButton choiceView = findViewById(R.id.sol_note_rb);
+        correctChoice = choiceView.isChecked();
+        if (correctChoice == true){
+            score4 = 1;
+        }else {
+            score4 = 0;
         }
     }
 
     /**
      * Checks the choise of question five
      */
-    public void radioButtonQuestionFive(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.date_one:
-                if (checked)
-                    score += 1;
-                break;
-            case R.id.date_two:
-                if (checked)
-                    score += 0;
-                break;
-            case R.id.date_three:
-                if (checked)
-                    score += 0;
-                break;
+    public void radioButtonQuestionFive() {
+        boolean correctChoice = false;
+        RadioButton choiceView = findViewById(R.id.date_one_rb);
+        correctChoice = choiceView.isChecked();
+        if (correctChoice == true){
+            score5 = 1;
+        }else {
+            score5 = 0;
         }
     }
 
@@ -188,20 +159,20 @@ public class MainQuiz extends AppCompatActivity {
         choice2 = questionTwoBox.isChecked();
         choice3 = questionThreeBox.isChecked();
         if (choice1 == false && choice2 == true && choice3 == true) {
-            score += 1;
+            score6 = 1;
         } else {
-            score += 0;
+            score6 = 0;
         }
     }
 
     public void questionSevenFieldCheck() {
         EditText editText = findViewById(R.id.question_seven_edit_field);
-        String fieldCheck = editText.getText().toString().toLowerCase();
+        String fieldCheck = editText.getText().toString();
 
-        if (fieldCheck.equals("paul") || fieldCheck.equals("gene") || fieldCheck.equals("tommy") || fieldCheck.equals("eric")) {
-            score += 1;
+        if (fieldCheck.equalsIgnoreCase("paul") || fieldCheck.equalsIgnoreCase("gene") || fieldCheck.equalsIgnoreCase("tommy") || fieldCheck.equalsIgnoreCase("eric")) {
+            score7 = 1;
         } else {
-            score += 0;
+            score7 = 0;
         }
     }
 }

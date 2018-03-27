@@ -15,12 +15,12 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:layout_marginTop="20dp"
-            android:background="#FFF847"
+            android:background="@color/golden"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
             android:text="@string/result_title"
             android:textAlignment="center"
-            android:textColor="#123456"
+            android:textColor="@color/brown"
             android:textSize="40sp" />
 
         <ImageView
@@ -32,7 +32,7 @@
             android:contentDescription="@string/result_image_description" />
 
         <TextView
-            android:id="@+id/result_answer"
+            android:id="@+id/result_answer_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -48,11 +48,11 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:background="#424036"
+            android:background="@color/brown"
             android:onClick="shareButton"
             android:padding="16dp"
             android:text="@string/share_button"
-            android:textColor="#FFF600" />
+            android:textColor="@color/golden" />
 
         <Button
             android:layout_width="match_parent"
@@ -60,11 +60,11 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:background="#424036"
+            android:background="@color/brown"
             android:onClick="toBeginning"
             android:padding="16dp"
             android:text="@string/try_again_button"
-            android:textColor="#FFF600" />
+            android:textColor="@color/golden" />
 
     </LinearLayout>
 </ScrollView>

@@ -11,12 +11,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF847"
+            android:background="@color/golden"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
             android:text="@string/title_q_1"
             android:textAlignment="center"
-            android:textColor="#FF000000"
+            android:textColor="@color/text_black"
             android:textSize="20sp" />
 
         <TextView
@@ -34,11 +34,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:background="#424036"
+            android:background="@color/brown"
             android:onClick="playSongThanks"
             android:padding="16dp"
             android:text="@string/q_1_button"
-            android:textColor="#FFF600" />
+            android:textColor="@color/golden" />
 
         <TextView
             android:layout_width="match_parent"
@@ -55,26 +55,21 @@
             android:padding="16dp">
 
             <RadioButton
-                android:id="@+id/volbeat"
+                android:id="@+id/volbeat_rb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="radioButtonQuestionOne"
                 android:padding="8dp"
                 android:text="@string/q_1_choice_1" />
 
             <RadioButton
-                android:id="@+id/metallica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="radioButtonQuestionOne"
                 android:padding="8dp"
                 android:text="@string/q_1_choice_2" />
 
             <RadioButton
-                android:id="@+id/ozzy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="radioButtonQuestionOne"
                 android:padding="8dp"
                 android:text="@string/q_1_choice_3" />
         </RadioGroup>
@@ -82,12 +77,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF847"
+            android:background="@color/golden"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
             android:text="@string/title_q_2"
             android:textAlignment="center"
-            android:textColor="#FF000000"
+            android:textColor="@color/text_black"
             android:textSize="20sp" />
 
         <TextView
@@ -118,26 +113,21 @@
                 android:padding="16dp">
 
                 <RadioButton
-                    android:id="@+id/the_calling"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="radioButtonQuestionTwo"
                     android:padding="8dp"
                     android:text="@string/q_2_choice_1" />
 
                 <RadioButton
-                    android:id="@+id/tenacious"
+                    android:id="@+id/tenacious_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="radioButtonQuestionTwo"
                     android:padding="8dp"
                     android:text="@string/q_2_choice_2" />
 
                 <RadioButton
-                    android:id="@+id/eurythmics"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="radioButtonQuestionTwo"
                     android:padding="8dp"
                     android:text="@string/q_2_choice_3" />
             </RadioGroup>
@@ -147,12 +137,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF847"
+            android:background="@color/golden"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
             android:text="@string/title_q_3"
             android:textAlignment="center"
-            android:textColor="#FF000000"
+            android:textColor="@color/text_black"
             android:textSize="20sp" />
 
         <TextView
@@ -183,26 +173,21 @@
                 android:padding="32dp">
 
                 <RadioButton
-                    android:id="@+id/mandolin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="radioButtonQuestionThree"
                     android:padding="8dp"
                     android:text="@string/q_3_choice_1" />
 
                 <RadioButton
-                    android:id="@+id/guitar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="radioButtonQuestionThree"
                     android:padding="8dp"
                     android:text="@string/q_3_choice_2" />
 
                 <RadioButton
-                    android:id="@+id/ukulele"
+                    android:id="@+id/ukulele_rb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="radioButtonQuestionThree"
                     android:padding="8dp"
                     android:text="@string/q_3_choice_3" />
             </RadioGroup>
@@ -212,12 +197,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF847"
+            android:background="@color/golden"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
             android:text="@string/title_q_4"
             android:textAlignment="center"
-            android:textColor="#FF000000"
+            android:textColor="@color/text_black"
             android:textSize="20sp" />
 
         <TextView
@@ -234,11 +219,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:background="#424036"
+            android:background="@color/brown"
             android:onClick="playNote"
             android:padding="16dp"
             android:text="@string/q_4_button"
-            android:textColor="#FFF600" />
+            android:textColor="@color/golden" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -246,26 +231,21 @@
             android:padding="16dp">
 
             <RadioButton
-                android:id="@+id/do_note"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="radioButtonQuestionFour"
                 android:padding="8dp"
                 android:text="@string/q_4_choice_1" />
 
             <RadioButton
-                android:id="@+id/sol_note"
+                android:id="@+id/sol_note_rb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="radioButtonQuestionFour"
                 android:padding="8dp"
                 android:text="@string/q_4_choice_2" />
 
             <RadioButton
-                android:id="@+id/la_note"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="radioButtonQuestionFour"
                 android:padding="8dp"
                 android:text="@string/q_4_choice_3" />
         </RadioGroup>
@@ -273,12 +253,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF847"
+            android:background="@color/golden"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
             android:text="@string/title_q_5"
             android:textAlignment="center"
-            android:textColor="#FF000000"
+            android:textColor="@color/text_black"
             android:textSize="20sp" />
 
         <TextView
@@ -295,26 +275,21 @@
             android:padding="16dp">
 
             <RadioButton
-                android:id="@+id/date_one"
+                android:id="@+id/date_one_rb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="radioButtonQuestionFive"
                 android:padding="8dp"
                 android:text="@string/q_5_choice_1" />
 
             <RadioButton
-                android:id="@+id/date_two"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="radioButtonQuestionFive"
                 android:padding="8dp"
                 android:text="@string/q_5_choice_2" />
 
             <RadioButton
-                android:id="@+id/date_three"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="radioButtonQuestionFive"
                 android:padding="8dp"
                 android:text="@string/q_5_choice_3" />
         </RadioGroup>
@@ -322,12 +297,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF847"
+            android:background="@color/golden"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
             android:text="@string/title_q_6"
             android:textAlignment="center"
-            android:textColor="#FF000000"
+            android:textColor="@color/text_black"
             android:textSize="20sp" />
 
         <TextView
@@ -369,12 +344,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF847"
+            android:background="@color/golden"
             android:fontFamily="@font/quicksand_medium"
             android:padding="16dp"
             android:text="@string/title_q_7"
             android:textAlignment="center"
-            android:textColor="#FF000000"
+            android:textColor="@color/text_black"
             android:textSize="20sp" />
 
         <TextView
@@ -409,11 +384,11 @@
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:background="#424036"
+            android:background="@color/brown"
             android:onClick="toResultsActivity"
             android:padding="16dp"
             android:text="@string/complete_quiz_button"
-            android:textColor="#FFF600" />
+            android:textColor="@color/golden" />
 
     </LinearLayout>
 </ScrollView>
